@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pisang Rayu</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ===================== SCROLL PROGRESS ===================== -->
+    <div id="we-scrollProgress" class="we-scroll-progress" aria-hidden="true"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Pisang RAYU</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+
+        <!-- PARALLAX LAYERS -->
+        <div class="we-parallax-wrap" id="we-parallaxWrap">
+            <div class="we-parallax-layer we-layer-back" data-depth="0.12"></div>
+            <div class="we-parallax-layer we-layer-mid" data-depth="0.25"></div>
+            <div class="we-parallax-layer we-layer-front" data-depth="0.45"></div>
+        </div>
+
+        <!-- PARTICLES -->
+        <canvas id="we-particlesPremium" class="we-particles"></canvas>
+
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+            <h1 class="hero-title">Pisang <span>Lumer</span> Lezat</h1>
+            <p class="hero-sub">Manis, Lembut, Lumer - cemilan favorit kita semua</p>
+            <a class="btn-primary we-btn-ripple" href="#menu">Mulai Sekarang</a>
+        </div>
+
+        <!-- FLOATING HERO IMAGES -->
+        <div class="hero-images">
+            <img src="assets/image/pisang1.jpg" class="float-img img-left parallax-img" alt="Pisang Lumer 1" />
+            <img src="assets/image/pisang2.jpg" class="float-img img-right parallax-img" alt="Pisang Lumer 2" />
+        </div>
+
+    </section>
+
+    <!-- ===================== GOLD WAVE SEPARATOR ===================== -->
+    <div class="wave-separator">
+        <img src="assets/image/wave-gold.svg" alt="Wave">
+    </div>
+
+    <!-- ===================== MENU ===================== -->
+    <section id="menu" class="menu-section">
+        <h2>Menu Kami</h2>
+        <div class="we-gold-line"><span class="we-gold-line-glow"></span></div>
+
+        <div class="menu-container">
+
+            <div class="menu-card we-tilt-card">
+                <div class="we-tilt-inner">
+                    <img src="assets/image/Lumpia isi pisang cokelat rasa coklat dan tiramisu.jpg" class="we-img-reveal" />
+                    <h3>Pisang Lumer Coklat & Tiramisu</h3>
+                    <p>Rp 15.000</p>
+                </div>
+            </div>
+
+            <div class="menu-card we-tilt-card">
+                <div class="we-tilt-inner">
+                    <img src="assets/image/Lumpia isi pisang cokelat rasa greentea dan tiramisu.jpg" class="we-img-reveal" />
+                    <h3>Pisang Lumer Greentea & Tiramisu</h3>
+                    <p>Rp 15.000</p>
+                </div>
+            </div>
+
+            <div class="menu-card we-tilt-card">
+                <div class="we-tilt-inner">
+                    <img src="assets/image/Lumpia isi pisang cokelat rasa coklat.jpg" class="we-img-reveal" />
+                    <h3>Pisang Lumer Coklat</h3>
+                    <p>Rp 15.000</p>
+                </div>
+            </div>
+
+            <div class="menu-card we-tilt-card">
+                <div class="we-tilt-inner">
+                    <img src="assets/image/Lumpia isi pisang cokelat rasa greentea.jpg" class="we-img-reveal" />
+                    <h3>Pisang Lumer Greentea</h3>
+                    <p>Rp 15.000</p>
+                </div>
+            </div>
+
+            <div class="menu-card we-tilt-card">
+                <div class="we-tilt-inner">
+                    <img src="assets/image/Lumpia isi pisang cokelat rasa Tiramisu.jpg" class="we-img-reveal" />
+                    <h3>Pisang Lumer Tiramisu</h3>
+                    <p>Rp 15.000</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== STATS COUNTER ===================== -->
+    <section class="we-stats">
+        <div class="we-stat">
+            <div class="we-count" data-target="120">130</div>
+            <p>Customer</p>
+        </div>
+        <div class="we-stat">
+            <div class="we-count" data-target="540">566</div>
+            <p>Penjualan</p>
+        </div>
+        <div class="we-stat">
+            <div class="we-count" data-target="9">2025</div>
+            <p>Tahun</p>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="kontak" class="kontak-section fade-in-up">
+        <h2>Kontak Kami</h2>
+        <div class="we-gold-line"><span class="we-gold-line-glow"></span></div>
+        <p>Hubungi kami untuk pemesanan & kerjasama.</p>
+        <a href="https://wa.me/62895326491724" class="contact-btn shine we-btn-ripple">WhatsApp</a>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <h3>Pisang Rayu</h3>
+        <p>Cemilan manis lumer favorit semua orang.</p>
+
+        <div class="footer-social">
+            <a href="#"><img src="assets/image/instagram.jpg"></a>
+            <a href="#"><img src="assets/image/whatsapp.jpg"></a>
+            <a href="#"><img src="assets/image/telepon.jpg"></a>
+        </div>
+
+        <p class="copy">© 2025 Pisang Rayu - All Rights Reserved</p>
+    </footer>
+
+    <!-- ===================== FLOATING CTA SIDEBAR ===================== -->
+    <div class="we-cta-sidebar">
+        <a href="https://wa.me/62895326491724" target="_blank" class="we-cta-item">WA</a>
+        <a href="tel:+6281234567890" class="we-cta-item">Telp</a>
+        <a href="https://instagram.com/mhdraihanpratama019/" target="_blank" class="we-cta-item">IG</a>
+    </div>
+
+    <!-- PAGE TRANSITION OVERLAY -->
+    <div id="we-pageTransition" class="we-page-transition"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
